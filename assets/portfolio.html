@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8" />
     <title>MY Portfolio</title>
-    <link rel="stylesheet" href="./portfolio-page/assets/css/style.css" />
+    <link rel="stylesheet" href="C:\Users\yipbq\Documents\coding bootcamp\portfolio-page\assets\css\style.css" />
 </head>
        
     <body>
-        <header class="main-header">
+        <header class="main-header" class="back-to-top">
             <h1>Welcome to my Portfolio!</h1>
         </header>
     <main>
-        <section class="card">
-            <button>About Me</button>
-            <img src="https://i.stack.imgur.com/yZlqh.png" />
-        </section>
-        <section class="card">
-            <button>MY Work</button>
-            <img src="https://i.stack.imgur.com/yZlqh.png" />
-        </section>
-        <button>Contact Me</button>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#my-work">My Work</a>
+            <a href="#contact-me">Contact Me</a>
+        </nav>
+        <content class="about-me">
+            <h2>About Me</h2>
+            <img src="https://i.stack.imgur.com/yZlqh.png" alt="it me"/>
+            <p>Hi my name is David and I am an aspiring web designer. I enjoy bouldering, cooking, as well as photography</p>
+        </content>
+        <content class="my-work">
+            <h3>My Work</h3>
+            <img src="https://i.stack.imgur.com/yZlqh.png" alt="idk man"/>
+        </content>
+        <content class="contact-me">
+            <h4>Contact Me</h4>
+            <ul>
+                <li>Email: example@somewhere.com</li>
+                <li>Phone: (123)456-7890</li>
+                <li>Linkden: username@linkden</li>
+            </ul>
+        </content>
     </main>
+    <footer>
+        <p id="footer content">hello welcome to the bottom</p>
+    </footer>
     </body>
 </html>
