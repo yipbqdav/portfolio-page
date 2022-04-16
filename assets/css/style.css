@@ -1,18 +1,19 @@
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background-color: #7c7c7c;
+    color: #F8F4EA;
+    font-size: 25px;
+}
 .main-header {
     font-size: 60px;
     padding: 60px;
     text-align: center;
     color: #F7F4EA;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #0A100D;
-    color: #F8F4EA;
-    font-size: 25px;
+    font-family: helvetica;
 }
 nav {
     height: 60px;
@@ -40,11 +41,13 @@ a:hover {
 h2, h3, h4 {
     font-size: 40px;
     background-color:#9829BE;
-    margin-right: 800px;
+    margin-right: 700px;
     margin-left: -20px;
     border-width: 1px;
     border-radius: 50px;
     padding-left: 30px;
+    display: flex;
+    font-family: helvetica;
 }
 img {
     width: 10%;
@@ -56,7 +59,22 @@ footer {
     height: 50px;
     font-size: 20px;
     text-align:center;
+    flex-basis: 50px;
+	padding: 20px;
+	box-sizing: border-box;
 }
 li {
     margin: 15px 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.back-to-top {
+	/* this needs to fill the viewport
+	position fixed will work on modern mobile devices. */
+	position: fixed;
+	top:0; right:0; bottom:0; left:0;
+	/* add flex-box */
+	display:flex;
+	flex-direction:column;
 }
