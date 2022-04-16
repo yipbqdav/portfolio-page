@@ -48,6 +48,7 @@ h2, h3, h4 {
     padding-left: 30px;
     display: flex;
     font-family: helvetica;
+    /* could probably id the headers to try and reduce repeating code, namely fonts, size, and such */
 }
 img {
     width: 10%;
@@ -55,6 +56,7 @@ img {
     padding-left: 20px;
 }
 footer {
+    /* footer does not stick to the bottom when viewed on smaller mobile devices */
     background:#58A4B0;
     height: 50px;
     font-size: 20px;
@@ -68,8 +70,10 @@ li {
 }
 html {
     scroll-behavior: smooth;
+    /* makes the website scroll smoothly to content when a link is clicked as opposed to jumping, pretty neat imo */
 }
 .back-to-top {
+    /* test code to try and correct the footer not fitting properly */
 	/* this needs to fill the viewport
 	position fixed will work on modern mobile devices. */
 	position: fixed;
