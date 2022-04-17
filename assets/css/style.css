@@ -7,6 +7,9 @@ body {
     background-color: #7c7c7c;
     color: #F8F4EA;
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 .main-header {
     font-size: 60px;
@@ -40,7 +43,7 @@ a:hover {
 }
 h2, h3, h4 {
     font-size: 40px;
-    background-color:#9829BE;
+    background-color:#27187e;
     margin-right: 700px;
     margin-left: -20px;
     border-width: 1px;
@@ -64,21 +67,13 @@ footer {
     flex-basis: 50px;
 	padding: 20px;
 	box-sizing: border-box;
+    margin-top: auto;
+    width: 100%;
 }
 li {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 html {
     scroll-behavior: smooth;
     /* makes the website scroll smoothly to content when a link is clicked as opposed to jumping, pretty neat imo */
-}
-.back-to-top {
-    /* test code to try and correct the footer not fitting properly */
-	/* this needs to fill the viewport
-	position fixed will work on modern mobile devices. */
-	position: fixed;
-	top:0; right:0; bottom:0; left:0;
-	/* add flex-box */
-	display:flex;
-	flex-direction:column;
 }
